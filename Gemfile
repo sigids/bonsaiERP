@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.1'
+#ruby '2.3.1'
 gem 'rails', '4.2.7.1'
 
 # Assets
@@ -9,7 +9,7 @@ gem 'coffee-rails' , '~> 4.0.1'
 gem 'uglifier' , '>= 2.7.0'
 
 gem 'compass-rails', '~> 2.0.4'
-gem 'pg' # Postgresql adapter
+gem 'pg', '~> 0.20' # Postgresql adapter
 gem 'virtus' # Model generation in simple way
 #gem 'squeel' # Better SQL queries
 
@@ -17,6 +17,7 @@ gem 'simple_form'
 gem 'haml', '>= 4.0.5'
 gem 'kaminari' # Pagination
 gem 'bcrypt-ruby', require: 'bcrypt'
+gem 'bcrypt', platform: :ruby
 gem 'active_model_serializers' # ActiveRecord Classes to encode in JSON
 gem 'resubject' # Cool presenter
 
@@ -31,6 +32,8 @@ gem 'dragonfly'
 gem "rack-cors", require: "rack/cors"
 
 gem "responders", "~> 2.0"
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
   gem 'newrelic_rpm'
